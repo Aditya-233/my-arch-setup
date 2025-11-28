@@ -1,0 +1,68 @@
+/* The main window container */
+window {
+  margin: 0px;
+  border: 2px solid #89b4fa;
+  /* Blue border (matches your Omarchy/Hyprland theme) */
+  background-color: rgba(30, 30, 46, 0.95);
+  /* Dark background with 0.95 alpha */
+  border-radius: 0px;
+  /* Walker config had no radius on the box wrapper */
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  /* Using your preferred font */
+  font-size: 18px;
+}
+
+/* The Search Bar */
+#input {
+  margin: 20px 20px 10px 20px;
+  /* Top/Left/Right padding matches Walker wrapper */
+  border: none;
+  color: #cdd6f4;
+  background-color: #1e1e2e;
+  /* Darker input background */
+  padding: 10px;
+  border-radius: 0px;
+}
+
+/* The Scrollable List */
+#scroll {
+  margin: 0px 20px 20px 20px;
+  /* Bottom/Left/Right padding */
+  border: none;
+}
+
+/* Individual Entries */
+#entry {
+  padding: 14px;
+  /* Matches Walker .item-text-box padding */
+  border: none;
+}
+
+/* Selected Entry */
+#entry:selected {
+  background-color: #89b4fa;
+  /* Blue highlight */
+  color: #1e1e2e;
+  /* Dark text on selection */
+  border-radius: 0px;
+}
+
+/* Text in Selected Entry */
+#entry:selected #text {
+  color: #1e1e2e;
+  font-style: italic;
+  /* Matches Walker .current { font-style: italic; } */
+}
+
+/* Normal Text */
+#text {
+  margin-left: 10px;
+  color: #cdd6f4;
+}
+
+/* Icons */
+#img {
+  margin-right: 14px;
+  /* Matches Walker .item-image margin */
+  background-color: transparent;
+}

@@ -1,0 +1,49 @@
+# -----------------------------------------------------
+# CORE BEHAVIOR
+# -----------------------------------------------------
+add_newline = true
+command_timeout = 200
+# Simplified format to remove extra brackets that might clutter the view
+format = "$directory$git_branch$git_status$character"
+
+# -----------------------------------------------------
+# PROMPT SYMBOLS
+# -----------------------------------------------------
+[character]
+# Using the 'Blue' accent (#89b4fa) for success
+success_symbol = "[❯](bold #89b4fa)"
+# Using 'Red' accent (#f38ba8) for errors
+error_symbol = "[✗](bold #f38ba8)"
+
+# -----------------------------------------------------
+# DIRECTORY
+# -----------------------------------------------------
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+# Using 'Blue' (#89b4fa) instead of generic cyan
+style = "bold #89b4fa"
+read_only = " "
+
+# -----------------------------------------------------
+# GIT INTEGRATION
+# -----------------------------------------------------
+[git_branch]
+format = "[$branch]($style) "
+# Using 'Pink' (#f5c2e7) for branches to make them pop against the blue directory
+style = "italic #f5c2e7"
+
+[git_status]
+format = '[$all_status]($style) '
+style = "#f5c2e7"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+conflicted = ""
+up_to_date = ""
+untracked = "?"
+modified = "!"
+stashed = "≡"
+staged = "+"
+renamed = "»"
+deleted = "✘"

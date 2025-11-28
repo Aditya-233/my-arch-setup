@@ -1,0 +1,136 @@
+/**
+ * "Zero-Friction" Theme (Matches Hyprland/Waybar/Wofi)
+ * Based on Catppuccin Mocha Palette
+ */
+
+/* --- CORE PALETTE --- */
+@define-color background #1e1e2e;
+/* Dark Grey/Blue Base */
+@define-color foreground #cdd6f4;
+/* White Text */
+@define-color accent #89b4fa;
+/* Blue Accent */
+
+/* --- COLOR DEFINITIONS --- */
+@define-color black #1e1e2e;
+@define-color red #f38ba8;
+@define-color green #a6e3a1;
+@define-color yellow #f9e2af;
+@define-color blue #89b4fa;
+@define-color magenta #f5c2e7;
+@define-color cyan #94e2d5;
+@define-color white #bac2de;
+
+/* --- ADWAITA OVERRIDES --- */
+@define-color window_bg_color @background;
+@define-color window_fg_color @foreground;
+@define-color view_bg_color @background;
+@define-color view_fg_color @foreground;
+
+/* Highlight/Accent Colors */
+@define-color accent_bg_color @accent;
+@define-color accent_fg_color @background;
+@define-color accent_color @accent;
+
+/* Selection Colors */
+@define-color theme_selected_bg_color @accent;
+@define-color theme_selected_fg_color @background;
+
+/* Sidebar (Thunar Left Panel) */
+@define-color sidebar_bg_color @background;
+@define-color sidebar_fg_color @foreground;
+@define-color sidebar_backdrop_color @background;
+
+/* Header Bars (Top Title Bar) */
+@define-color headerbar_bg_color #181825;
+/* Slightly darker than bg */
+@define-color headerbar_fg_color @foreground;
+@define-color headerbar_backdrop_color @background;
+
+/* Borders */
+@define-color borders #313244;
+/* Subtle grey border */
+@define-color unfocused_borders #313244;
+
+/* Popovers & Menus */
+@define-color popover_bg_color #181825;
+@define-color popover_fg_color @foreground;
+
+/* Dialogs */
+@define-color dialog_bg_color @background;
+@define-color dialog_fg_color @foreground;
+
+
+/* --- COMPONENT STYLING --- */
+
+/* Sharp Corners (Matches Wofi/Waybar style) */
+window,
+dialog,
+menu,
+popover,
+tooltip {
+  border-radius: 8px;
+  /* Changed to 8px to match your Hyprland config rounding */
+}
+
+/* Buttons */
+button {
+  background-color: #313244;
+  color: @foreground;
+  border: 1px solid @borders;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+button:hover {
+  background-color: #45475a;
+  border-color: @accent;
+}
+
+button:active {
+  background-color: @accent;
+  color: @background;
+}
+
+/* Entry Fields (Search bars, inputs) */
+entry {
+  background-color: #181825;
+  color: @foreground;
+  border: 1px solid @borders;
+  border-radius: 4px;
+}
+
+entry:focus {
+  border-color: @accent;
+  box-shadow: 0 0 0 1px @accent;
+}
+
+/* Message Dialogs */
+messagedialog {
+  background-color: @background;
+}
+
+messagedialog label {
+  color: @foreground;
+}
+
+/* Thunar Specifics */
+.thunar .sidebar {
+  background-color: #181825;
+}
+
+.thunar .view {
+  background-color: @background;
+}
+
+/* Scrollbars */
+scrollbar slider {
+  min-width: 6px;
+  min-height: 6px;
+  border-radius: 6px;
+  background-color: #45475a;
+}
+
+scrollbar slider:hover {
+  background-color: @accent;
+}
