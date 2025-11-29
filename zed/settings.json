@@ -1,0 +1,139 @@
+{
+    "title_bar": {
+        "show_menus": false,
+        "show_sign_in": false,
+        "show_user_picture": false,
+        "show_onboarding_banner": false,
+        "show_project_items": false,
+        "show_branch_name": false,
+        "show_branch_icon": false
+    },
+    "project_panel": {
+        "dock": "right",
+        "button": false,
+        "auto_fold_dirs": false,
+        "indent_size": 20,
+        "file_icons": true
+    },
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false,
+        "agent_review": false,
+        "selections_menu": false
+    },
+    "agent": {
+        "button": false,
+        "expand_terminal_card": false,
+        "expand_edit_card": false,
+        "enable_feedback": false,
+        "single_file_review": false
+    },
+    "status_bar": {
+        "experimental.show": false
+    },
+    "search": {
+        "button": false
+    },
+    "diagnostics": {
+        "button": false
+    },
+    "auto_update": false,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "edit_predictions": {
+        "enabled_in_text_threads": false
+    },
+    "show_edit_predictions": false,
+    "icon_theme": "Material Icon Theme",
+    "theme": "Ayu Dark",
+    "cursor_shape": "bar",
+    "ui_font_family": "JetBrainsMono Nerd Font",
+    "cursor_blink": true,
+    "scrollbar": {
+        "show": "never",
+        "cursors": true,
+        "git_diff": true,
+        "search_results": true,
+        "selected_text": true,
+        "selected_symbol": true,
+        "diagnostics": "all",
+        "axes": {
+            "horizontal": false,
+            "vertical": false
+        }
+    },
+    "git": {
+        "git_gutter": "tracked_files",
+        "inline_blame": {
+            "enabled": true,
+            "delay_ms": 0
+        }
+    },
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 1000
+        }
+    },
+    "format_on_save": "on",
+    "tab_size": 4,
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "buffer_font_features": {
+        "calt": true
+    },
+    "buffer_font_size": 22,
+    "buffer_font_weight": 200,
+    "buffer_line_height": {
+        "custom": 2
+    },
+    "ui_font_size": 16,
+    "terminal": {
+        "line_height": {
+            "custom": 1.5
+        },
+        "font_size": 20,
+        "blinking": "terminal_controlled",
+        "dock": "bottom",
+        "button": true
+    },
+    "minimap": {
+        "show": "never"
+    },
+    "use_autoclose": true,
+    "soft_wrap": "bounded",
+    "preferred_line_length": 90,
+    "show_whitespaces": "boundary",
+    "tab_bar": {
+        "show": true
+    },
+    "preview_tabs": {
+        "enabled": false
+    },
+    "tabs": {
+        "file_icons": true,
+        "git_status": false
+    },
+    "current_line_highlight": "none",
+    "selection_highlight": false,
+    "gutter": {
+        "line_numbers": true,
+        "folds": false
+    },
+    "indent_guides": {
+        "enabled": false
+    },
+    "ensure_final_newline_on_save": true,
+    "remove_trailing_whitespace_on_save": true,
+    "snippet_sort_order": "top",
+    "confirm_quit": false,
+    "hover_popover_delay": 500,
+    "multi_cursor_modifier": "cmd_or_ctrl",
+    "linked_edits": true,
+    "sticky_scroll": {
+        "enabled": false
+    },
+    "show_completions_on_input": true,
+    "auto_signature_help": true,
+    "inline_code_actions": true
+}
